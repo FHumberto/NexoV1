@@ -1,0 +1,9 @@
+{
+    "extends": ["stylelint-config-standard", "stylelint-config-prettier"],
+    "rules": {
+        "property-no-vendor-prefix": null,
+        "value-no-vendor-prefix": null,
+        "selector-no-vendor-prefix": null,
+        "at-rule-no-vendor-prefix": null
+    }
+}
