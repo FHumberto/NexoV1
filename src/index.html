@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/c72c43c12d.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Fira%20Code" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Fira%20Mono" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto%20Mono" rel="stylesheet" />
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon_fh-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon_fh-16x16.png" />
+    <meta name="description"
+        content="Meu site de portifólio, onde monstro alguns dos meus trabalhos, as linguagens, frameworks e ferramentas que utilizo." />
+    <link href="css/global.css" rel="stylesheet" />
+    <link href="css/main.css" rel="stylesheet" />
+    <link href="css/responsive.css" rel="stylesheet" />
+
+    <title>FHumberto</title>
+</head>
+
+<body>
+    <header class="menu">
+        <img class="menu-logo" src="img/header-logo_fh.png" alt="Logo-FHumberto" />
+
+        <nav class="menu-nav" role="navigation">
+            <a class="menu-nav-item" href="#home">Início</a>
+            <a class="menu-nav-item" href="#about">Sobre</a>
+            <a class="menu-nav-item" href="#skills">Habilidades</a>
+            <a class="menu-nav-item" href="#projects">Projetos</a>
+        </nav>
+
+        <a class="mobile-icon" href="javascript:void(0);" onclick="toggleMobileNav()">
+            <em class="fa fa-bars"></em>
+        </a>
+
+        <div class="mobile-nav">
+            <div id="mobile-nav-links">
+                <a href="#home">Início</a>
+                <a href="#about">Sobre</a>
+                <a href="#skills">Habilidades</a>
+                <a href="#projects">Projetos</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="home">
+            <div>
+                <h3 class="home-tittle-sec">Olá, meu nome é</h3>
+                <h1 class="home-tittle-large">Humberto Guedes</h1>
+                <h3 class="home-tittle-sec">
+                    Sou um engenheiro de software.
+                </h3>
+
+                <div class="home-contact">
+                    <a class="home-contact-item" href="mailto:fhumberto.trab@hotmail.com">
+                        <em class="fas fa-envelope icon"></em>
+                        <p class="txt-social">E-Mail</p>
+                    </a>
+                    <a class="home-contact-item" href="https://www.linkedin.com/in/fhumberto-">
+                        <em class="fab fa-linkedin icon"></em>
+                        <p class="txt-social">linkedIn</p>
+                    </a>
+                    <a class="home-contact-item" href="https://github.com/FHumberto">
+                        <em class="fab fa-github icon"></em>
+                        <p class="txt-social">GitHub</p>
+                    </a>
+                    <a class="home-contact-item" href="doc/Currículo.pdf">
+                        <em class="fa-solid fa-user icon"></em>
+                        <p class="txt-social">Currículo</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <h1>Sobre Mim</h1>
+
+            <div class="about-content">
+                <div id="photo-ctn">
+                    <img class="about-content-photo" src="https://avatars.githubusercontent.com/u/7258900?v=4"
+                        alt="Foto do Humberto" />
+                    <div class="about-content-photo-bg"></div>
+                </div>
+                <div class="about-content-description">
+                    <p>Olá! Meu nome é <strong>Humberto Guedes</strong>.</p>
+                    <p>
+                        Sou um apaixonado por tecnologia e desenvolvimento
+                        de jogos. Gosto de criar aplicações interativas. Meu
+                        interesse pela área de programação começou por volta
+                        de 2003, quando tive contato com o RPG Maker.
+                        Fazendo engenharia reversa nos arquivos do motor
+                        gráfico em conjunto com autodidatismo para construir
+                        o meu próprio jogo.
+                    </p>
+                    <p>
+                        Atuei no mercado de trabalho como um
+                        <strong>Analista de Redes</strong> e agora estou em
+                        transição de carreira para
+                        <strong>Engenharia de Software</strong>. E no futuro
+                        pretendo me especializar na área de desenvolvimento
+                        de jogos e aplicações interativas.
+                    </p>
+                    <p>
+                        Sou bacharelado em Ciências da Computação pela UERN.
+                        recentemente pós-graduado em Engenharia de Software
+                        pela Estácio.
+                    </p>
+                    <span>Interesses:</span>
+                    <p>
+                        Desenvolvimento de Jogos. Organização. IA.
+                        Aplicações Web e Mobile.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h1>Habilidades</h1>
+
+            <div class="skills-ctn">
+                <div class="skills-vb">
+                    <div class="skills-ctn-item">
+                        <img class="skills-ctn-item-img" src="img/skill-logo_html5.png" alt="Logo-HTML5" />
+                        <div class="skills-ctn-item-lbl">
+                            <div class="flex-row">
+                                <span>HTML5</span>
+                                <span name="skill">70%</span>
+                            </div>
+                            <div class="flex-row" name="skillProgress">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills-ctn-item">
+                        <img class="skills-ctn-item-img" src="img/skill-logo_css3.png" alt="Logo-CSS3" />
+                        <div class="skills-ctn-item-lbl">
+                            <div class="flex-row">
+                                <span>CSS3</span>
+                                <span name="skill">60%</span>
+                            </div>
+                            <div class="flex-row" name="skillProgress">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills-ctn-item">
+                        <img class="skills-ctn-item-img" src="img/skill-logo_js.png" alt="Logo-JS" />
+                        <div class="skills-ctn-item-lbl">
+                            <div class="flex-row">
+                                <span>JavaScript</span>
+                                <span name="skill">50%</span>
+                            </div>
+                            <div class="flex-row" name="skillProgress">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills-ctn-item">
+                        <img class="skills-ctn-item-img" src="img/skill-logo_csharp.png" alt="Logo-C#" />
+                        <div class="skills-ctn-item-lbl">
+                            <div class="flex-row">
+                                <span>C#</span>
+                                <span name="skill">70%</span>
+                            </div>
+                            <div class="flex-row" name="skillProgress">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-vb">
+                    <div class="skills-ctn-item">
+                        <img class="skills-ctn-item-img" src="img/skill-logo_cpp.png" alt="Logo-C++" />
+                        <div class="skills-ctn-item-lbl">
+                            <div class="flex-row">
+                                <span>C++</span>
+                                <span name="skill">40%</span>
+                            </div>
+                            <div class="flex-row" name="skillProgress">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills-ctn-item">
+                        <img class="skills-ctn-item-img" src="img/skill-logo_git.png" alt="Logo-GIT" />
+                        <div class="skills-ctn-item-lbl">
+                            <div class="flex-row">
+                                <span>GIT</span>
+                                <span name="skill">70%</span>
+                            </div>
+                            <div class="flex-row" name="skillProgress">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills-ctn-item">
+                        <img class="skills-ctn-item-img" src="img/skill-logo_ue4.png" alt="Logo-UE4" />
+                        <div class="skills-ctn-item-lbl">
+                            <div class="flex-row">
+                                <span>UE4</span>
+                                <span name="skill">60%</span>
+                            </div>
+                            <div class="flex-row" name="skillProgress">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h1>Projetos</h1>
+
+            <noscript>
+                <h3>Falha em carregar projetos.</h3>
+                <p>Clique no botão abaixo para acessar a lista de projetos</p>
+                <a class="project-card-inner-link"
+                    href="https://github.com/FHumberto?tab=repositories&q=PES-PF&type=source&language=&sort=">Visualizar
+                    Projetos</a>
+            </noscript>
+
+            <div class="project-grid">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <span>© 2022 - Desenvolvido por
+            <strong><a href="https://github.com/FHumberto">Humberto Guedes</a></strong></span>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
