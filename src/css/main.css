@@ -353,7 +353,7 @@
     justify-content: stretch;
     margin: 50px 0 0;
     padding: 0;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     row-gap: 3%;
     gap: 15px;
     grid-auto-flow: dense;
@@ -370,6 +370,7 @@
 }
 
 .project-card-tittle {
+    background-color: #000;
     font-size: 20px;
     letter-spacing: -1px;
     padding: 0.3rem;
