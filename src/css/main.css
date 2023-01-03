@@ -238,7 +238,7 @@
     -o-border-radius: 0.2rem;
 }
 
-.about-content-photo:hover+.about-content-photo-bg {
+.about-content-photo:hover + .about-content-photo-bg {
     top: -290px;
     left: -10px;
     border-color: crimson;
@@ -249,7 +249,7 @@
     -moz-transition: 0.25s;
 }
 
-.about-content-photo:not(:hover)+.about-content-photo-bg {
+.about-content-photo:not(:hover) + .about-content-photo-bg {
     top: -285px;
     left: -15px;
     transition: 0.25s;
@@ -289,7 +289,7 @@
 }
 
 .skills-ctn-item-img {
-    height: clamp(60px, 18vw, 80px);
+    height: clamp(40px, 18vw, 60px);
     padding: 5px 2px;
     background: linear-gradient(to right, white 2px, transparent 2px) 0 0,
         linear-gradient(to right, white 2px, transparent 2px) 0 100%,
@@ -316,9 +316,9 @@
     gap: 5px;
 }
 
-.bg-white {
-    width: clamp(18px, 4vw, 30px);
-    height: 60px;
+.bg-crimson {
+    width: clamp(28px, 4vw, 32px);
+    height: clamp(20px, 18vw, 40px);
     border: 2px solid black;
     border-radius: 0.2rem;
     background-color: crimson;
@@ -329,8 +329,8 @@
 }
 
 .bg-gray {
-    width: clamp(18px, 4vw, 30px);
-    height: 60px;
+    width: clamp(28px, 4vw, 32px);
+    height: clamp(20px, 18vw, 40px);
     border: 2px solid black;
     border-radius: 0.2rem;
     background-color: gray;

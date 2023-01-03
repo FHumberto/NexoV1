@@ -62,11 +62,6 @@
     .txt-social {
         display: none;
     }
-
-    .bg-white,
-    .bg-gray {
-        height: 50px;
-    }
 }
 
 @media screen and (max-width: 480px) {
@@ -85,11 +80,6 @@
     .txt-social {
         display: none;
     }
-
-    .bg-white,
-    .bg-gray {
-        height: 50px;
-    }
 }
 
 @media screen and (max-width: 320px) {
@@ -99,10 +89,5 @@
 
     main {
         padding: 0 10px;
-    }
-
-    .bg-white,
-    .bg-gray {
-        height: 40px;
     }
 }
