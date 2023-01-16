@@ -58,7 +58,7 @@ async function getApiGitHub()
         const data = await res.json();
 
         // filtra os repositórios
-        const filteredData = data.filter(data => data.name.startsWith("PES-PF"));
+        const filteredData = data.filter(data => data.name.startsWith("PES-"));
 
         // faz uma requisição para cada repositório filtrado
         for (const repo of filteredData)
@@ -71,10 +71,12 @@ async function getApiGitHub()
                 <h3 class="project-card-tittle">${projectInfo.name}</h3>
                 <img class="project-card-img" src="https://raw.githubusercontent.com/FHumberto/${repo.name}/main/project/demo.gif" alt="Screen do ${projectInfo.name}" />
                 <div class="project-card-inner">
+                    <div class="project-card-inner-desc">
                     <p>${projectInfo.description}</p>
                     <h4>Tecnologias Utilizadas:</h4>
                     <p>${projectInfo.tech}</p>
-                    <a class="project-card-inner-link" href="https://github.com/FHumberto/${repo.name}/">Visualizar</a>
+                </div>
+                    <a class="project-card-inner-link" href="https://github.com/FHumberto/${repo.name}/">Visualizar Repositório</a>
                 </div>
                 </div>`;
         }
