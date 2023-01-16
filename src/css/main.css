@@ -317,7 +317,7 @@
 }
 
 .bg-crimson {
-    width: clamp(28px, 4vw, 32px);
+    width: clamp(25px, 4vw, 32px);
     height: clamp(20px, 18vw, 40px);
     border: 2px solid black;
     border-radius: 0.2rem;
@@ -329,7 +329,7 @@
 }
 
 .bg-gray {
-    width: clamp(28px, 4vw, 32px);
+    width: clamp(25px, 4vw, 32px);
     height: clamp(20px, 18vw, 40px);
     border: 2px solid black;
     border-radius: 0.2rem;
@@ -360,6 +360,8 @@
 }
 
 .project-card {
+    display: flex;
+    flex-direction: column;
     border: none;
     border-radius: 0.2rem;
     box-shadow: 0 1px 3px 0 #d4d4d5, 0 0 0 1px #d4d4d5;
@@ -386,7 +388,14 @@
 }
 
 .project-card-inner {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
     padding: 0.3rem;
+}
+
+.project-card-inner-desc{
+    flex-grow: 1;
 }
 
 .project-card-inner-link {
