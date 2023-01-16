@@ -317,7 +317,7 @@
 }
 
 .bg-crimson {
-    width: clamp(28px, 4vw, 32px);
+    width: clamp(25px, 4vw, 32px);
     height: clamp(20px, 18vw, 40px);
     border: 2px solid black;
     border-radius: 0.2rem;
@@ -329,7 +329,7 @@
 }
 
 .bg-gray {
-    width: clamp(28px, 4vw, 32px);
+    width: clamp(25px, 4vw, 32px);
     height: clamp(20px, 18vw, 40px);
     border: 2px solid black;
     border-radius: 0.2rem;
