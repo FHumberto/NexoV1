@@ -316,30 +316,6 @@
     gap: 5px;
 }
 
-.bg-crimson {
-    width: clamp(25px, 4vw, 32px);
-    height: clamp(20px, 18vw, 40px);
-    border: 2px solid black;
-    border-radius: 0.2rem;
-    background-color: crimson;
-    -webkit-border-radius: 0.2rem;
-    -moz-border-radius: 0.2rem;
-    -ms-border-radius: 0.2rem;
-    -o-border-radius: 0.2rem;
-}
-
-.bg-gray {
-    width: clamp(25px, 4vw, 32px);
-    height: clamp(20px, 18vw, 40px);
-    border: 2px solid black;
-    border-radius: 0.2rem;
-    background-color: gray;
-    -webkit-border-radius: 0.2rem;
-    -moz-border-radius: 0.2rem;
-    -ms-border-radius: 0.2rem;
-    -o-border-radius: 0.2rem;
-}
-
 #projects {
     display: flex;
     flex-direction: column;

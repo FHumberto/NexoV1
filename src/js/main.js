@@ -23,27 +23,6 @@ navLinks.addEventListener('click', () =>
     toggleMobileNav();
 });
 
-//* SKILLS
-const skillsLevel = [7, 6, 6, 7, 4, 7, 6];
-
-let count = 0;
-skillsProgress.forEach((sk) =>
-{
-    for (let i = 0; i < 10; i++)
-    {
-        if (i < skillsLevel[count])
-        {
-            sk.insertAdjacentHTML('beforeend', '<div class="bg-crimson"></div>');
-        }
-        else
-        {
-            sk.insertAdjacentHTML('beforeend', '<div class="bg-gray"></div>');
-        }
-    }
-    count++;
-});
-
-
 //* HABILIDADES
 async function getApiGitHub()
 {
@@ -59,6 +38,8 @@ async function getApiGitHub()
 
         // filtra os repositórios
         const filteredData = data.filter(data => data.name.startsWith("PES-"));
+        const readmeData = await (await fetch(`https://raw.githubusercontent.com/FHumberto/FHumberto/main/src/data/skills.json`)).json();
+        console.log(readmeData)
 
         // faz uma requisição para cada repositório filtrado
         for (const repo of filteredData)
