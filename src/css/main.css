@@ -316,6 +316,41 @@
     gap: 5px;
 }
 
+.skill-grid {
+    display: grid;
+    justify-content: stretch;
+    margin: 50px 0 0;
+    padding: 0;
+    grid-template-columns: repeat(auto-fill, minmax(96px, 1fr));
+    row-gap: 3%;
+    gap: 15px;
+    grid-auto-flow: dense;
+}
+
+.skill-card {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    padding: 0.1rem;
+    border-radius: 0.2rem;
+    box-shadow: 0 1px 3px 0 #d4d4d5, 0 0 0 1px #d4d4d5;
+    -webkit-border-radius: 0.2rem;
+    -moz-border-radius: 0.2rem;
+    -ms-border-radius: 0.2rem;
+    -o-border-radius: 0.2rem;
+}
+
+.skill-card-img {
+    height: 96px;
+    width: 96px;
+    width: -webkit-fill-available !important;
+    width: -moz-available;
+}
+
+.skill-card-desc{
+    text-align: center;
+}
+
 #projects {
     display: flex;
     flex-direction: column;
