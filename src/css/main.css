@@ -268,46 +268,6 @@
     gap: 40px;
 }
 
-.skills-ctn {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    gap: 40px;
-}
-
-.skills-vb {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.skills-ctn-item {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    width: 100%;
-}
-
-.skills-ctn-item-img {
-    height: clamp(40px, 18vw, 60px);
-    padding: 5px 2px;
-    background: linear-gradient(to right, white 2px, transparent 2px) 0 0,
-        linear-gradient(to right, white 2px, transparent 2px) 0 100%,
-        linear-gradient(to left, white 2px, transparent 2px) 100% 0,
-        linear-gradient(to left, white 2px, transparent 2px) 100% 100%,
-        linear-gradient(to bottom, white 2px, transparent 2px) 0 0,
-        linear-gradient(to bottom, white 2px, transparent 2px) 100% 0,
-        linear-gradient(to top, white 2px, transparent 2px) 0 100%,
-        linear-gradient(to top, white 2px, transparent 2px) 100% 100%;
-    background-repeat: no-repeat;
-    background-size: 20px 20px;
-}
-
-.skills-ctn-item-lbl {
-    display: flex;
-    flex-direction: column;
-}
-
 .flex-row {
     display: flex;
     flex-direction: row;
@@ -319,7 +279,7 @@
 .skill-grid {
     display: grid;
     justify-content: stretch;
-    margin: 50px 0 0;
+    margin: 0;
     padding: 0;
     grid-template-columns: repeat(auto-fill, minmax(96px, 1fr));
     row-gap: 3%;
@@ -330,8 +290,10 @@
 .skill-card {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     border: none;
-    padding: 0.1rem;
+    padding: 0 0.1rem;
     border-radius: 0.2rem;
     box-shadow: 0 1px 3px 0 #d4d4d5, 0 0 0 1px #d4d4d5;
     -webkit-border-radius: 0.2rem;
@@ -348,6 +310,7 @@
 }
 
 .skill-card-desc{
+        margin: 5px;
     text-align: center;
 }
 

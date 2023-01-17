@@ -1,8 +1,8 @@
 //* REFERÊNCIAS
 const mobileNav = document.querySelector('.mobile-nav');
 const navLinks = document.getElementById('mobile-nav-links');
-const skillsProgress = document.querySelectorAll('[name="skillProgress"]');
-const projectGrid = document.querySelector('.project-grid')
+const skillsGrid = document.querySelector('.skill-grid');
+const projectGrid = document.querySelector('.project-grid');
 
 function toggleMobileNav()
 {
@@ -38,8 +38,20 @@ async function getApiGitHub()
 
         // filtra os repositórios
         const filteredData = data.filter(data => data.name.startsWith("PES-"));
-        const readmeData = await (await fetch(`https://raw.githubusercontent.com/FHumberto/FHumberto/main/src/data/skills.json`)).json();
-        console.log(readmeData)
+        // requisição ao repositório principal
+        const fhumbertoData = await (await fetch(`https://raw.githubusercontent.com/FHumberto/FHumberto/main/src/data/skills.json`)).json();
+
+        fhumbertoData.forEach(skill =>
+        {
+            skillsGrid.innerHTML += `
+            <div class="skill-grid">
+                <div class="skill-card">
+                    <img class="skill-card-img" src="${skill.icon}" />
+                    <p class="skill-card-desc">${skill.name}</p>
+                </div>
+            </div>
+            `
+        });
 
         // faz uma requisição para cada repositório filtrado
         for (const repo of filteredData)
