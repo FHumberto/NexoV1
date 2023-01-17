@@ -1,8 +1,8 @@
 //* REFERÊNCIAS
 const mobileNav = document.querySelector('.mobile-nav');
 const navLinks = document.getElementById('mobile-nav-links');
-const skillsProgress = document.querySelectorAll('[name="skillProgress"]');
-const projectGrid = document.querySelector('.project-grid')
+const skillsGrid = document.querySelector('.skill-grid');
+const projectGrid = document.querySelector('.project-grid');
 
 function toggleMobileNav()
 {
@@ -23,27 +23,6 @@ navLinks.addEventListener('click', () =>
     toggleMobileNav();
 });
 
-//* SKILLS
-const skillsLevel = [7, 6, 6, 7, 4, 7, 6];
-
-let count = 0;
-skillsProgress.forEach((sk) =>
-{
-    for (let i = 0; i < 10; i++)
-    {
-        if (i < skillsLevel[count])
-        {
-            sk.insertAdjacentHTML('beforeend', '<div class="bg-crimson"></div>');
-        }
-        else
-        {
-            sk.insertAdjacentHTML('beforeend', '<div class="bg-gray"></div>');
-        }
-    }
-    count++;
-});
-
-
 //* HABILIDADES
 async function getApiGitHub()
 {
@@ -59,6 +38,20 @@ async function getApiGitHub()
 
         // filtra os repositórios
         const filteredData = data.filter(data => data.name.startsWith("PES-"));
+        // requisição ao repositório principal
+        const fhumbertoData = await (await fetch(`https://raw.githubusercontent.com/FHumberto/FHumberto/main/src/data/skills.json`)).json();
+
+        fhumbertoData.forEach(skill =>
+        {
+            skillsGrid.innerHTML += `
+            <div class="skill-grid">
+                <div class="skill-card">
+                    <img class="skill-card-img" src="${skill.icon}" />
+                    <p class="skill-card-desc">${skill.name}</p>
+                </div>
+            </div>
+            `
+        });
 
         // faz uma requisição para cada repositório filtrado
         for (const repo of filteredData)

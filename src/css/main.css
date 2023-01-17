@@ -268,76 +268,42 @@
     gap: 40px;
 }
 
-.skills-ctn {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    gap: 40px;
+.skill-grid {
+    display: grid;
+    justify-content: stretch;
+    margin: 0;
+    padding: 0;
+    grid-template-columns: repeat(auto-fill, minmax(96px, 1fr));
+    row-gap: 3%;
+    gap: 15px;
+    grid-auto-flow: dense;
 }
 
-.skills-vb {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.skills-ctn-item {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    width: 100%;
-}
-
-.skills-ctn-item-img {
-    height: clamp(40px, 18vw, 60px);
-    padding: 5px 2px;
-    background: linear-gradient(to right, white 2px, transparent 2px) 0 0,
-        linear-gradient(to right, white 2px, transparent 2px) 0 100%,
-        linear-gradient(to left, white 2px, transparent 2px) 100% 0,
-        linear-gradient(to left, white 2px, transparent 2px) 100% 100%,
-        linear-gradient(to bottom, white 2px, transparent 2px) 0 0,
-        linear-gradient(to bottom, white 2px, transparent 2px) 100% 0,
-        linear-gradient(to top, white 2px, transparent 2px) 0 100%,
-        linear-gradient(to top, white 2px, transparent 2px) 100% 100%;
-    background-repeat: no-repeat;
-    background-size: 20px 20px;
-}
-
-.skills-ctn-item-lbl {
+.skill-card {
     display: flex;
     flex-direction: column;
-}
-
-.flex-row {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
-    gap: 5px;
-}
-
-.bg-crimson {
-    width: clamp(25px, 4vw, 32px);
-    height: clamp(20px, 18vw, 40px);
-    border: 2px solid black;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    padding: 0 0.1rem;
     border-radius: 0.2rem;
-    background-color: crimson;
+    box-shadow: 0 1px 3px 0 #d4d4d5, 0 0 0 1px #d4d4d5;
     -webkit-border-radius: 0.2rem;
     -moz-border-radius: 0.2rem;
     -ms-border-radius: 0.2rem;
     -o-border-radius: 0.2rem;
 }
 
-.bg-gray {
-    width: clamp(25px, 4vw, 32px);
-    height: clamp(20px, 18vw, 40px);
-    border: 2px solid black;
-    border-radius: 0.2rem;
-    background-color: gray;
-    -webkit-border-radius: 0.2rem;
-    -moz-border-radius: 0.2rem;
-    -ms-border-radius: 0.2rem;
-    -o-border-radius: 0.2rem;
+.skill-card-img {
+    height: 96px;
+    width: 96px;
+    width: -webkit-fill-available !important;
+    width: -moz-available;
+}
+
+.skill-card-desc{
+        margin: 5px;
+    text-align: center;
 }
 
 #projects {
