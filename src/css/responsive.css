@@ -8,7 +8,6 @@
     }
 }
 
-
 @media screen and (max-width: 768px) {
     .menu {
         padding: 10px 30px;
@@ -28,6 +27,14 @@
 
     .about-content-photo {
         align-self: center;
+    }
+
+    .icon {
+        width: 30px;
+    }
+
+    p {
+        letter-spacing: -0.9px;
     }
 }
 

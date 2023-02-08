@@ -89,7 +89,7 @@
     border-right: 0.15em solid white;
     overflow: hidden;
     color: crimson;
-    font-size: clamp(30px, 8vw, 80px);
+    font-size: clamp(25px, 8vw, 80px);
     letter-spacing: 0.15em;
     white-space: nowrap;
     -webkit-animation: typing 3.5s steps(15, end),
@@ -171,7 +171,7 @@
     justify-content: space-around;
     align-items: center;
     max-width: initial;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 0.9rem;
     border: 1px solid white;
     border-radius: 0.2rem;
     -webkit-border-radius: 0.2rem;
